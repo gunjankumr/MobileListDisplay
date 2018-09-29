@@ -24,6 +24,15 @@
 		FA382F5A215F30920019AEBC /* MobileListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382F54215F30920019AEBC /* MobileListInteractor.swift */; };
 		FA382F5C215F35790019AEBC /* MobileList+SWSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382F5B215F35790019AEBC /* MobileList+SWSegmentedControl.swift */; };
 		FA382F5E215F35B30019AEBC /* MobileList+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382F5D215F35B30019AEBC /* MobileList+TableView.swift */; };
+		FA382F61215F3E6C0019AEBC /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382F60215F3E6C0019AEBC /* Connectivity.swift */; };
+		FA382F63215F3EB90019AEBC /* ApiEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382F62215F3EB90019AEBC /* ApiEnvironment.swift */; };
+		FA382F65215F3F080019AEBC /* ApiServiceConfigurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382F64215F3F080019AEBC /* ApiServiceConfigurations.swift */; };
+		FA382F68215F41C10019AEBC /* MobileDetailSample.json in Resources */ = {isa = PBXBuildFile; fileRef = FA382F66215F41C00019AEBC /* MobileDetailSample.json */; };
+		FA382F69215F41C10019AEBC /* mobileListSample.json in Resources */ = {isa = PBXBuildFile; fileRef = FA382F67215F41C10019AEBC /* mobileListSample.json */; };
+		FA382F6C215F44A60019AEBC /* JsonFileReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382F6B215F44A60019AEBC /* JsonFileReader.swift */; };
+		FA382F6E215F47EE0019AEBC /* PublicEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382F6D215F47EE0019AEBC /* PublicEnums.swift */; };
+		FA382F71215F49D20019AEBC /* Mobile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382F70215F49D20019AEBC /* Mobile.swift */; };
+		FA382F73215F635D0019AEBC /* MobileListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382F72215F635D0019AEBC /* MobileListTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +82,15 @@
 		FA382F54215F30920019AEBC /* MobileListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileListInteractor.swift; sourceTree = "<group>"; };
 		FA382F5B215F35790019AEBC /* MobileList+SWSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MobileList+SWSegmentedControl.swift"; sourceTree = "<group>"; };
 		FA382F5D215F35B30019AEBC /* MobileList+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MobileList+TableView.swift"; sourceTree = "<group>"; };
+		FA382F60215F3E6C0019AEBC /* Connectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connectivity.swift; sourceTree = "<group>"; };
+		FA382F62215F3EB90019AEBC /* ApiEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiEnvironment.swift; sourceTree = "<group>"; };
+		FA382F64215F3F080019AEBC /* ApiServiceConfigurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiServiceConfigurations.swift; sourceTree = "<group>"; };
+		FA382F66215F41C00019AEBC /* MobileDetailSample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MobileDetailSample.json; sourceTree = "<group>"; };
+		FA382F67215F41C10019AEBC /* mobileListSample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mobileListSample.json; sourceTree = "<group>"; };
+		FA382F6B215F44A60019AEBC /* JsonFileReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonFileReader.swift; sourceTree = "<group>"; };
+		FA382F6D215F47EE0019AEBC /* PublicEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicEnums.swift; sourceTree = "<group>"; };
+		FA382F70215F49D20019AEBC /* Mobile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mobile.swift; sourceTree = "<group>"; };
+		FA382F72215F635D0019AEBC /* MobileListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileListTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +169,9 @@
 		FA382F1E215F20D70019AEBC /* MobileListDisplay */ = {
 			isa = PBXGroup;
 			children = (
+				FA382F6F215F49BA0019AEBC /* Models */,
+				FA382F6A215F448B0019AEBC /* Common */,
+				FA382F5F215F3DE50019AEBC /* API */,
 				FA382F4D215F30680019AEBC /* Scenes */,
 				FA382F1F215F20D70019AEBC /* AppDelegate.swift */,
 				FA382F23215F20D70019AEBC /* Main.storyboard */,
@@ -198,8 +219,38 @@
 				FA382F5B215F35790019AEBC /* MobileList+SWSegmentedControl.swift */,
 				FA382F5D215F35B30019AEBC /* MobileList+TableView.swift */,
 				FA382F54215F30920019AEBC /* MobileListInteractor.swift */,
+				FA382F72215F635D0019AEBC /* MobileListTableViewCell.swift */,
 			);
 			path = MobileList;
+			sourceTree = "<group>";
+		};
+		FA382F5F215F3DE50019AEBC /* API */ = {
+			isa = PBXGroup;
+			children = (
+				FA382F66215F41C00019AEBC /* MobileDetailSample.json */,
+				FA382F67215F41C10019AEBC /* mobileListSample.json */,
+				FA382F60215F3E6C0019AEBC /* Connectivity.swift */,
+				FA382F62215F3EB90019AEBC /* ApiEnvironment.swift */,
+				FA382F64215F3F080019AEBC /* ApiServiceConfigurations.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		FA382F6A215F448B0019AEBC /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				FA382F6B215F44A60019AEBC /* JsonFileReader.swift */,
+				FA382F6D215F47EE0019AEBC /* PublicEnums.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		FA382F6F215F49BA0019AEBC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FA382F70215F49D20019AEBC /* Mobile.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,6 +361,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA382F69215F41C10019AEBC /* mobileListSample.json in Resources */,
+				FA382F68215F41C10019AEBC /* MobileDetailSample.json in Resources */,
 				FA382F2A215F20D90019AEBC /* LaunchScreen.storyboard in Resources */,
 				FA382F27215F20D90019AEBC /* Assets.xcassets in Resources */,
 				FA382F25215F20D70019AEBC /* Main.storyboard in Resources */,
@@ -389,6 +442,8 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SWSegmentedControl/SWSegmentedControl.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -398,6 +453,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SWSegmentedControl.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,8 +491,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA382F71215F49D20019AEBC /* Mobile.swift in Sources */,
 				FA382F5A215F30920019AEBC /* MobileListInteractor.swift in Sources */,
+				FA382F6E215F47EE0019AEBC /* PublicEnums.swift in Sources */,
 				FA382F55215F30920019AEBC /* MobileListPresenter.swift in Sources */,
+				FA382F61215F3E6C0019AEBC /* Connectivity.swift in Sources */,
 				FA382F5E215F35B30019AEBC /* MobileList+TableView.swift in Sources */,
 				FA382F20215F20D70019AEBC /* AppDelegate.swift in Sources */,
 				FA382F59215F30920019AEBC /* MobileListViewController.swift in Sources */,
@@ -443,6 +503,10 @@
 				FA382F57215F30920019AEBC /* MobileListRouter.swift in Sources */,
 				FA382F58215F30920019AEBC /* MobileListModels.swift in Sources */,
 				FA382F56215F30920019AEBC /* MobileListWorker.swift in Sources */,
+				FA382F63215F3EB90019AEBC /* ApiEnvironment.swift in Sources */,
+				FA382F65215F3F080019AEBC /* ApiServiceConfigurations.swift in Sources */,
+				FA382F6C215F44A60019AEBC /* JsonFileReader.swift in Sources */,
+				FA382F73215F635D0019AEBC /* MobileListTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
