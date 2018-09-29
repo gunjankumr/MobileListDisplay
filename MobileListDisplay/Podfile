@@ -1,0 +1,14 @@
+platform :ios, '9.0'
+
+target 'MobileListDisplay' do
+  use_frameworks!
+  pod 'Moya'
+end
+
+target 'MobileListDisplayTests' do
+  use_frameworks!
+end
+
+target 'MobileListDisplayUITests' do
+  use_frameworks!
+end
