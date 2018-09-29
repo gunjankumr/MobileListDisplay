@@ -4,6 +4,8 @@ target 'MobileListDisplay' do
   use_frameworks!
   pod 'Moya'
   pod 'SWSegmentedControl'
+  pod 'SVProgressHUD'
+  pod 'SDWebImage'
 end
 
 target 'MobileListDisplayTests' do
