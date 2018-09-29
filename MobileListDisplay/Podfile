@@ -6,6 +6,7 @@ target 'MobileListDisplay' do
   pod 'SWSegmentedControl'
   pod 'SVProgressHUD'
   pod 'SDWebImage'
+  pod 'iCarousel'
 end
 
 target 'MobileListDisplayTests' do

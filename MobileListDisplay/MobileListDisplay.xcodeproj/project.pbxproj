@@ -33,6 +33,14 @@
 		FA382F6E215F47EE0019AEBC /* PublicEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382F6D215F47EE0019AEBC /* PublicEnums.swift */; };
 		FA382F71215F49D20019AEBC /* Mobile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382F70215F49D20019AEBC /* Mobile.swift */; };
 		FA382F73215F635D0019AEBC /* MobileListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382F72215F635D0019AEBC /* MobileListTableViewCell.swift */; };
+		FA382F7B215F79070019AEBC /* MobileDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382F75215F79070019AEBC /* MobileDetailsPresenter.swift */; };
+		FA382F7C215F79070019AEBC /* MobileDetailsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382F76215F79070019AEBC /* MobileDetailsWorker.swift */; };
+		FA382F7D215F79080019AEBC /* MobileDetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382F77215F79070019AEBC /* MobileDetailsRouter.swift */; };
+		FA382F7E215F79080019AEBC /* MobileDetailsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382F78215F79070019AEBC /* MobileDetailsModels.swift */; };
+		FA382F7F215F79080019AEBC /* MobileDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382F79215F79070019AEBC /* MobileDetailsViewController.swift */; };
+		FA382F80215F79080019AEBC /* MobileDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382F7A215F79070019AEBC /* MobileDetailsInteractor.swift */; };
+		FA382F82215F79CB0019AEBC /* MobileDetailImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382F81215F79CB0019AEBC /* MobileDetailImages.swift */; };
+		FA382F84215F90E30019AEBC /* MobileDetail+ImageGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382F83215F90E30019AEBC /* MobileDetail+ImageGallery.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +99,14 @@
 		FA382F6D215F47EE0019AEBC /* PublicEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicEnums.swift; sourceTree = "<group>"; };
 		FA382F70215F49D20019AEBC /* Mobile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mobile.swift; sourceTree = "<group>"; };
 		FA382F72215F635D0019AEBC /* MobileListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileListTableViewCell.swift; sourceTree = "<group>"; };
+		FA382F75215F79070019AEBC /* MobileDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDetailsPresenter.swift; sourceTree = "<group>"; };
+		FA382F76215F79070019AEBC /* MobileDetailsWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDetailsWorker.swift; sourceTree = "<group>"; };
+		FA382F77215F79070019AEBC /* MobileDetailsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDetailsRouter.swift; sourceTree = "<group>"; };
+		FA382F78215F79070019AEBC /* MobileDetailsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDetailsModels.swift; sourceTree = "<group>"; };
+		FA382F79215F79070019AEBC /* MobileDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDetailsViewController.swift; sourceTree = "<group>"; };
+		FA382F7A215F79070019AEBC /* MobileDetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDetailsInteractor.swift; sourceTree = "<group>"; };
+		FA382F81215F79CB0019AEBC /* MobileDetailImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDetailImages.swift; sourceTree = "<group>"; };
+		FA382F83215F90E30019AEBC /* MobileDetail+ImageGallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MobileDetail+ImageGallery.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +219,7 @@
 		FA382F4D215F30680019AEBC /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				FA382F74215F78D60019AEBC /* MobileDetails */,
 				FA382F4E215F30710019AEBC /* MobileList */,
 			);
 			path = Scenes;
@@ -249,8 +266,23 @@
 			isa = PBXGroup;
 			children = (
 				FA382F70215F49D20019AEBC /* Mobile.swift */,
+				FA382F81215F79CB0019AEBC /* MobileDetailImages.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		FA382F74215F78D60019AEBC /* MobileDetails */ = {
+			isa = PBXGroup;
+			children = (
+				FA382F75215F79070019AEBC /* MobileDetailsPresenter.swift */,
+				FA382F76215F79070019AEBC /* MobileDetailsWorker.swift */,
+				FA382F77215F79070019AEBC /* MobileDetailsRouter.swift */,
+				FA382F78215F79070019AEBC /* MobileDetailsModels.swift */,
+				FA382F79215F79070019AEBC /* MobileDetailsViewController.swift */,
+				FA382F7A215F79070019AEBC /* MobileDetailsInteractor.swift */,
+				FA382F83215F90E30019AEBC /* MobileDetail+ImageGallery.swift */,
+			);
+			path = MobileDetails;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -445,6 +477,7 @@
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SWSegmentedControl/SWSegmentedControl.framework",
+				"${BUILT_PRODUCTS_DIR}/iCarousel/iCarousel.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -456,6 +489,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SWSegmentedControl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/iCarousel.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -493,6 +527,8 @@
 			files = (
 				FA382F71215F49D20019AEBC /* Mobile.swift in Sources */,
 				FA382F5A215F30920019AEBC /* MobileListInteractor.swift in Sources */,
+				FA382F82215F79CB0019AEBC /* MobileDetailImages.swift in Sources */,
+				FA382F7E215F79080019AEBC /* MobileDetailsModels.swift in Sources */,
 				FA382F6E215F47EE0019AEBC /* PublicEnums.swift in Sources */,
 				FA382F55215F30920019AEBC /* MobileListPresenter.swift in Sources */,
 				FA382F61215F3E6C0019AEBC /* Connectivity.swift in Sources */,
@@ -500,13 +536,19 @@
 				FA382F20215F20D70019AEBC /* AppDelegate.swift in Sources */,
 				FA382F59215F30920019AEBC /* MobileListViewController.swift in Sources */,
 				FA382F5C215F35790019AEBC /* MobileList+SWSegmentedControl.swift in Sources */,
+				FA382F84215F90E30019AEBC /* MobileDetail+ImageGallery.swift in Sources */,
 				FA382F57215F30920019AEBC /* MobileListRouter.swift in Sources */,
+				FA382F7C215F79070019AEBC /* MobileDetailsWorker.swift in Sources */,
 				FA382F58215F30920019AEBC /* MobileListModels.swift in Sources */,
+				FA382F80215F79080019AEBC /* MobileDetailsInteractor.swift in Sources */,
 				FA382F56215F30920019AEBC /* MobileListWorker.swift in Sources */,
 				FA382F63215F3EB90019AEBC /* ApiEnvironment.swift in Sources */,
 				FA382F65215F3F080019AEBC /* ApiServiceConfigurations.swift in Sources */,
+				FA382F7D215F79080019AEBC /* MobileDetailsRouter.swift in Sources */,
+				FA382F7B215F79070019AEBC /* MobileDetailsPresenter.swift in Sources */,
 				FA382F6C215F44A60019AEBC /* JsonFileReader.swift in Sources */,
 				FA382F73215F635D0019AEBC /* MobileListTableViewCell.swift in Sources */,
+				FA382F7F215F79080019AEBC /* MobileDetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

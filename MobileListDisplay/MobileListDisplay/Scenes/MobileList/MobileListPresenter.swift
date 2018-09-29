@@ -14,6 +14,7 @@ import UIKit
 protocol MobileListPresentationLogic {
   func presentMobileListFromService(response: MobileList.GetMobileList.Response)
   func presentMobileListWithSorting(response: MobileList.GetSortedMobileList.Response)
+  func presentSelectedMobile(response: MobileList.SelectedMobile.Response)
 }
 
 class MobileListPresenter: MobileListPresentationLogic {
@@ -50,8 +51,8 @@ class MobileListPresenter: MobileListPresentationLogic {
     viewController?.displayMobileListWithSorting(viewModel: viewModel)
   }
   
-//  func presentSelectMobile(response: MobileList.SelectMobile.Response) {
-//    let viewModel = MobileList.SelectMobile.ViewModel()
-//    viewController?.displaySelectMobile(viewModel: viewModel)
-//  }
+  func presentSelectedMobile(response: MobileList.SelectedMobile.Response) {
+    let viewModel = MobileList.SelectedMobile.ViewModel()
+    viewController?.displaySelectedMobile(viewModel: viewModel)
+  }
 }

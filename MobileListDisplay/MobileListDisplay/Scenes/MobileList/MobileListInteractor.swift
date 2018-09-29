@@ -14,6 +14,7 @@ import UIKit
 protocol MobileListBusinessLogic {
   func getMobileListFromService(request: MobileList.GetMobileList.Request)
   func getSortedMobileList(request: MobileList.GetSortedMobileList.Request)
+  func selectedMobile(request: MobileList.SelectedMobile.Request)
 }
 
 protocol MobileListDataStore: class {
@@ -59,5 +60,12 @@ class MobileListInteractor: MobileListBusinessLogic, MobileListDataStore {
     
     let response = MobileList.GetSortedMobileList.Response(mobiles: sortedMobileList)
     self.presenter?.presentMobileListWithSorting(response: response)
+  }
+  
+  func selectedMobile(request: MobileList.SelectedMobile.Request) {
+    guard let selectedMobile = mobiles.first(where: { $0.id == request.id }) else { return }
+    self.selectedMobile = selectedMobile
+    let response = MobileList.SelectedMobile.Response()
+    presenter?.presentSelectedMobile(response: response)
   }
 }

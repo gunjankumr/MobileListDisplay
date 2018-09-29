@@ -12,7 +12,7 @@
 import UIKit
 
 @objc protocol MobileListRoutingLogic {
-  
+  func routeToDetailInfo(segue: UIStoryboardSegue?)
 }
 
 protocol MobileListDataPassing {
@@ -23,10 +23,27 @@ class MobileListRouter: NSObject, MobileListRoutingLogic, MobileListDataPassing 
   weak var viewController: MobileListViewController?
   var dataStore: MobileListDataStore?
   
-  // MARK: - Route Functions
+  // MARK: Routing
+  func routeToDetailInfo(segue: UIStoryboardSegue?) {
+    guard let detailViewController = segue?.destination as? MobileDetailsViewController,
+      let selectedMobile = dataStore?.selectedMobile else { return }
+    passDataToDetail(destination: detailViewController, selectedMobile: selectedMobile)
+  }
   
-  // MARK: - Navigate Functions
-  
-  // MARK: - Passing Data Functions
-  
+  func passDataToDetail(destination: MobileDetailsViewController, selectedMobile: Mobile) {
+    destination.router?.dataStore?.selectedMobile = selectedMobile
+  }
+}
+
+extension MobileListViewController {
+  // MARK: Routing
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+  {
+    if let scene = segue.identifier {
+      let selector = NSSelectorFromString("routeTo\(scene)WithSegue:")
+      if let router = router, router.responds(to: selector) {
+        router.perform(selector, with: segue)
+      }
+    }
+  }
 }
