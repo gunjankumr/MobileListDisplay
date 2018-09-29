@@ -157,6 +157,9 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="2lF-jH-Egi"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="segmentedChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="KuC-su-Ghg"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -16,11 +16,6 @@ extension MobileListViewController: SWSegmentedControlDelegate {
   
   func segmentedControl(_ control: SWSegmentedControl, didSelectItemAtIndex index: Int) {
     print("did select \(index)")
-    if index == 1 {
-      selectedTab = .favourite
-    } else {
-      selectedTab = .all
-    }
   }
   
   func segmentedControl(_ control: SWSegmentedControl, willDeselectItemAtIndex index: Int) {
