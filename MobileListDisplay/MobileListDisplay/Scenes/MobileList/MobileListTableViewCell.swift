@@ -15,9 +15,8 @@ class MobileListTableViewCell: UITableViewCell {
   @IBOutlet var descLabel: UILabel!
   @IBOutlet var ratingLabel: UILabel!
   @IBOutlet var priceLabel: UILabel!
-  
   @IBOutlet var favButton: UIButton!
-  
+
   func setMobile(mobile: MobileList.MobileInfo, selectedTab: TapOptions) {
     mobileImageView?.sd_setImage(with: URL(string: mobile.thumbImageURL),
                               placeholderImage: UIImage(named: "defaultMobile"),
@@ -28,9 +27,18 @@ class MobileListTableViewCell: UITableViewCell {
     descLabel.text = mobile.description
     ratingLabel.text = "\(mobile.rating)"
     priceLabel.text = "$\(mobile.price)"
+    
+    if selectedTab == .favourite {
+      favButton.isHidden = true
+    } else {
+      favButton.isHidden = false
+    }
+    
+    if FavouriteListWorker.shared.getIsFavouriteById(mobileId: mobile.id) {
+      favButton.setImage(UIImage(named: "fav_selected"), for: .normal)
+    } else {
+      favButton.setImage(UIImage(named: "fav"), for: .normal)
+    }
 
-  }
-  
-  @IBAction func favButtonClicked(sender: UIButton) {
   }
 }
