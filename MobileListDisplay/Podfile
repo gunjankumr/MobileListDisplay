@@ -7,6 +7,7 @@ target 'MobileListDisplay' do
   pod 'SVProgressHUD'
   pod 'SDWebImage'
   pod 'iCarousel'
+  pod 'RealmSwift'
 end
 
 target 'MobileListDisplayTests' do

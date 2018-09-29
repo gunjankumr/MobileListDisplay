@@ -48,6 +48,12 @@ class MobileListInteractor: MobileListBusinessLogic, MobileListDataStore {
   }
   
   func getSortedMobileList(request: MobileList.GetSortedMobileList.Request) {
+    
+    func getFavouriteItem(sources: [Mobile]) -> [Mobile] {
+      let favouriteList = FavouriteListWorker.shared.fetchAllFav()
+      return sources.filter { favouriteList.contains($0.id) }
+    }
+    
     var sortedMobileList: [Mobile] = []
     switch request.sorting {
     case .low:
@@ -58,7 +64,7 @@ class MobileListInteractor: MobileListBusinessLogic, MobileListDataStore {
       sortedMobileList = self.mobiles.sorted { $0.rating > $1.rating }
     }
     
-    let response = MobileList.GetSortedMobileList.Response(mobiles: sortedMobileList)
+    let response = MobileList.GetSortedMobileList.Response(mobiles: request.selectedTab == .favourite ? getFavouriteItem(sources: sortedMobileList) : sortedMobileList)
     self.presenter?.presentMobileListWithSorting(response: response)
   }
   

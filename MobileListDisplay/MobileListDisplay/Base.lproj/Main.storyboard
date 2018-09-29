@@ -98,9 +98,6 @@
                                                     </constraints>
                                                     <state key="normal" image="fav"/>
                                                     <state key="selected" image="fav_selected"/>
-                                                    <connections>
-                                                        <action selector="favButtonClickedWithSender:" destination="Ffj-xa-Nsa" eventType="touchUpInside" id="75L-bJ-FCS"/>
-                                                    </connections>
                                                 </button>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vC4-6Y-RNo">
                                                     <rect key="frame" x="0.0" y="119" width="375" height="1"/>

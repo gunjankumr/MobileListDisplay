@@ -145,6 +145,7 @@ class MobileListViewController: UIViewController, MobileListDisplayLogic {
     } else {
       selectedTab = .all
     }
+    getMobileList()
   }
   
 }

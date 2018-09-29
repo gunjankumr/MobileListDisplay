@@ -41,6 +41,12 @@
 		FA382F80215F79080019AEBC /* MobileDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382F7A215F79070019AEBC /* MobileDetailsInteractor.swift */; };
 		FA382F82215F79CB0019AEBC /* MobileDetailImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382F81215F79CB0019AEBC /* MobileDetailImages.swift */; };
 		FA382F84215F90E30019AEBC /* MobileDetail+ImageGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382F83215F90E30019AEBC /* MobileDetail+ImageGallery.swift */; };
+		FA382F8C215FB3DB0019AEBC /* FavouriteListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382F86215FB3DB0019AEBC /* FavouriteListPresenter.swift */; };
+		FA382F8D215FB3DB0019AEBC /* FavouriteListWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382F87215FB3DB0019AEBC /* FavouriteListWorker.swift */; };
+		FA382F8E215FB3DB0019AEBC /* FavouriteListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382F88215FB3DB0019AEBC /* FavouriteListRouter.swift */; };
+		FA382F8F215FB3DB0019AEBC /* FavouriteListModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382F89215FB3DB0019AEBC /* FavouriteListModels.swift */; };
+		FA382F90215FB3DB0019AEBC /* FavouriteListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382F8A215FB3DB0019AEBC /* FavouriteListViewController.swift */; };
+		FA382F91215FB3DB0019AEBC /* FavouriteListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382F8B215FB3DB0019AEBC /* FavouriteListInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +113,12 @@
 		FA382F7A215F79070019AEBC /* MobileDetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDetailsInteractor.swift; sourceTree = "<group>"; };
 		FA382F81215F79CB0019AEBC /* MobileDetailImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDetailImages.swift; sourceTree = "<group>"; };
 		FA382F83215F90E30019AEBC /* MobileDetail+ImageGallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MobileDetail+ImageGallery.swift"; sourceTree = "<group>"; };
+		FA382F86215FB3DB0019AEBC /* FavouriteListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteListPresenter.swift; sourceTree = "<group>"; };
+		FA382F87215FB3DB0019AEBC /* FavouriteListWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteListWorker.swift; sourceTree = "<group>"; };
+		FA382F88215FB3DB0019AEBC /* FavouriteListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteListRouter.swift; sourceTree = "<group>"; };
+		FA382F89215FB3DB0019AEBC /* FavouriteListModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteListModels.swift; sourceTree = "<group>"; };
+		FA382F8A215FB3DB0019AEBC /* FavouriteListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteListViewController.swift; sourceTree = "<group>"; };
+		FA382F8B215FB3DB0019AEBC /* FavouriteListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteListInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +231,7 @@
 		FA382F4D215F30680019AEBC /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				FA382F85215FB3B90019AEBC /* FavouriteList */,
 				FA382F74215F78D60019AEBC /* MobileDetails */,
 				FA382F4E215F30710019AEBC /* MobileList */,
 			);
@@ -283,6 +296,19 @@
 				FA382F83215F90E30019AEBC /* MobileDetail+ImageGallery.swift */,
 			);
 			path = MobileDetails;
+			sourceTree = "<group>";
+		};
+		FA382F85215FB3B90019AEBC /* FavouriteList */ = {
+			isa = PBXGroup;
+			children = (
+				FA382F86215FB3DB0019AEBC /* FavouriteListPresenter.swift */,
+				FA382F87215FB3DB0019AEBC /* FavouriteListWorker.swift */,
+				FA382F88215FB3DB0019AEBC /* FavouriteListRouter.swift */,
+				FA382F89215FB3DB0019AEBC /* FavouriteListModels.swift */,
+				FA382F8A215FB3DB0019AEBC /* FavouriteListViewController.swift */,
+				FA382F8B215FB3DB0019AEBC /* FavouriteListInteractor.swift */,
+			);
+			path = FavouriteList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -473,6 +499,8 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-MobileListDisplay/Pods-MobileListDisplay-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
@@ -485,6 +513,8 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
@@ -529,11 +559,15 @@
 				FA382F5A215F30920019AEBC /* MobileListInteractor.swift in Sources */,
 				FA382F82215F79CB0019AEBC /* MobileDetailImages.swift in Sources */,
 				FA382F7E215F79080019AEBC /* MobileDetailsModels.swift in Sources */,
+				FA382F90215FB3DB0019AEBC /* FavouriteListViewController.swift in Sources */,
 				FA382F6E215F47EE0019AEBC /* PublicEnums.swift in Sources */,
+				FA382F8E215FB3DB0019AEBC /* FavouriteListRouter.swift in Sources */,
 				FA382F55215F30920019AEBC /* MobileListPresenter.swift in Sources */,
 				FA382F61215F3E6C0019AEBC /* Connectivity.swift in Sources */,
 				FA382F5E215F35B30019AEBC /* MobileList+TableView.swift in Sources */,
+				FA382F8F215FB3DB0019AEBC /* FavouriteListModels.swift in Sources */,
 				FA382F20215F20D70019AEBC /* AppDelegate.swift in Sources */,
+				FA382F91215FB3DB0019AEBC /* FavouriteListInteractor.swift in Sources */,
 				FA382F59215F30920019AEBC /* MobileListViewController.swift in Sources */,
 				FA382F5C215F35790019AEBC /* MobileList+SWSegmentedControl.swift in Sources */,
 				FA382F84215F90E30019AEBC /* MobileDetail+ImageGallery.swift in Sources */,
@@ -542,7 +576,9 @@
 				FA382F58215F30920019AEBC /* MobileListModels.swift in Sources */,
 				FA382F80215F79080019AEBC /* MobileDetailsInteractor.swift in Sources */,
 				FA382F56215F30920019AEBC /* MobileListWorker.swift in Sources */,
+				FA382F8C215FB3DB0019AEBC /* FavouriteListPresenter.swift in Sources */,
 				FA382F63215F3EB90019AEBC /* ApiEnvironment.swift in Sources */,
+				FA382F8D215FB3DB0019AEBC /* FavouriteListWorker.swift in Sources */,
 				FA382F65215F3F080019AEBC /* ApiServiceConfigurations.swift in Sources */,
 				FA382F7D215F79080019AEBC /* MobileDetailsRouter.swift in Sources */,
 				FA382F7B215F79070019AEBC /* MobileDetailsPresenter.swift in Sources */,
