@@ -34,3 +34,13 @@ extension MobileListViewController: UITableViewDataSource {
     return cell
   }
 }
+
+extension MobileListViewController: UITableViewDelegate {
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    tableView.deselectRow(at: indexPath, animated: true)
+    let displayMobile: MobileList.MobileInfo?  = self.mobiles[indexPath.row]
+    
+    guard let mobile = displayMobile else { return }
+    selectedMobile(mobile: mobile)
+  }
+}

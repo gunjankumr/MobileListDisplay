@@ -17,6 +17,8 @@ import SVProgressHUD
 protocol MobileListDisplayLogic: class {
   func displayMobileList(viewModel: MobileList.GetMobileList.ViewModel)
   func displayMobileListWithSorting(viewModel: MobileList.GetSortedMobileList.ViewModel)
+  func displaySelectedMobile(viewModel: MobileList.SelectedMobile.ViewModel)
+
 }
 
 class MobileListViewController: UIViewController, MobileListDisplayLogic {
@@ -69,6 +71,9 @@ class MobileListViewController: UIViewController, MobileListDisplayLogic {
     tableView.reloadData()
   }
   
+  func displaySelectedMobile(viewModel: MobileList.SelectedMobile.ViewModel) {
+    performSegue(withIdentifier: "DetailInfo", sender: nil)
+  }
   
   // MARK: - Request Functions
   func getMobileDataFromService() {
@@ -80,6 +85,11 @@ class MobileListViewController: UIViewController, MobileListDisplayLogic {
   func getMobileList() {
     let request = MobileList.GetSortedMobileList.Request(selectedTab: selectedTab, sorting: sorting)
     interactor?.getSortedMobileList(request: request)
+  }
+  
+  func selectedMobile(mobile: MobileList.MobileInfo) {
+    let request = MobileList.SelectedMobile.Request(id: mobile.id)
+    interactor?.selectedMobile(request: request)
   }
 
   
@@ -156,14 +166,4 @@ extension MobileListViewController {
     router.viewController = viewController
     router.dataStore = interactor
   }
-  
-  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    if let scene = segue.identifier {
-      let selector = NSSelectorFromString("routeTo\(scene)WithSegue:")
-      if let router = router, router.responds(to: selector) {
-        router.perform(selector, with: segue)
-      }
-    }
-  }
-  
 }

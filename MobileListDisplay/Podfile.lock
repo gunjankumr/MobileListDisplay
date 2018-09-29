@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (4.7.3)
+  - iCarousel (1.8.3)
   - Moya (11.0.2):
     - Moya/Core (= 11.0.2)
   - Moya/Core (11.0.2):
@@ -13,6 +14,7 @@ PODS:
   - SWSegmentedControl (2.6.1)
 
 DEPENDENCIES:
+  - iCarousel
   - Moya
   - SDWebImage
   - SVProgressHUD
@@ -21,6 +23,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - iCarousel
     - Moya
     - Result
     - SDWebImage
@@ -29,12 +32,13 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  iCarousel: d782f635afac190c49bb8ee455882284cff8b85f
   Moya: a725035953bc1c0eb1be505ab903984501d82440
   Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
   SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SWSegmentedControl: 5770c91bb4b438be300371221e38f4af5100bba2
 
-PODFILE CHECKSUM: 06832928ba3bb6c404511483e5068d044bbcee72
+PODFILE CHECKSUM: 4b484c46b4bcc597193e008ed0ac92c536cc0370
 
 COCOAPODS: 1.5.3
