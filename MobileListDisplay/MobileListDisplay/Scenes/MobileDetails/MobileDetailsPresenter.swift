@@ -14,6 +14,7 @@ import UIKit
 
 protocol MobileDetailsPresentationLogic {
   func presentMobileDetails(response: MobileDetails.GetMobileDetail.Response)
+  func presentMobileDetailError()
 }
 
 class MobileDetailsPresenter: MobileDetailsPresentationLogic {
@@ -25,5 +26,9 @@ class MobileDetailsPresenter: MobileDetailsPresentationLogic {
     let mobileDetail = MobileDetails.GetMobileDetail.ViewModel.MobileDetail(mobile: response.mobile, imageGallery: response.imageGallery)
     let viewModel = MobileDetails.GetMobileDetail.ViewModel(mobileDetail: mobileDetail)
     viewController?.displayMobileDetail(viewModel: viewModel)
+  }
+  
+  func presentMobileDetailError() {
+    viewController?.displayMobileDetailError()
   }
 }

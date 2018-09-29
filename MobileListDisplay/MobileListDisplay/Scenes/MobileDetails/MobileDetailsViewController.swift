@@ -16,6 +16,7 @@ import SVProgressHUD
 
 protocol MobileDetailsDisplayLogic: class {
   func displayMobileDetail(viewModel: MobileDetails.GetMobileDetail.ViewModel)
+  func displayMobileDetailError()
 }
 
 class MobileDetailsViewController: UIViewController, MobileDetailsDisplayLogic {
@@ -44,9 +45,15 @@ class MobileDetailsViewController: UIViewController, MobileDetailsDisplayLogic {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    imageGallery.delegate = self
     setUI()
-    
     getMobileDetail()
+  }
+  
+  override func viewWillDisappear(_ animated: Bool) {
+    super.viewWillDisappear(animated)
+    guard mobileDetail?.imageGallery != nil else { return}
+      imageGallery.currentItemIndex = 0
   }
   
   func setUI() {
@@ -75,6 +82,23 @@ class MobileDetailsViewController: UIViewController, MobileDetailsDisplayLogic {
     setDetail()
     imageGallery.reloadData()
   }
+  
+  func displayMobileDetailError() {
+    SVProgressHUD.dismiss()
+    showAlertWithMessage(title: "Error", message: "Unable to fetch data")
+  }
+  
+  func showAlertWithMessage(title: String, message: String) {
+    let alert = UIAlertController(title: title,
+                                  message: message,
+                                  preferredStyle: UIAlertController.Style.alert)
+    
+    alert.addAction(UIAlertAction(title: "OK",
+                                  style: UIAlertAction.Style.cancel,
+                                  handler: nil))
+    self.present(alert, animated: true, completion: nil)
+  }
+
   
 }
 

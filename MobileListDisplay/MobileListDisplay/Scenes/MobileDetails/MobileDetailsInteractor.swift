@@ -34,12 +34,8 @@ class MobileDetailsInteractor: MobileDetailsBusinessLogic, MobileDetailsDataStor
       case .success(let mobileImages):
         let response = MobileDetails.GetMobileDetail.Response(mobile: self.selectedMobile, imageGallery: mobileImages)
         self.presenter?.presentMobileDetails(response: response)
-      case .failure(.noInternet): break
-//        self.useExistingData()
-      case .failure(.serviceError): break
-//        self.useExistingData()
-      case .failure(.noRecord): break
-//        self.useExistingData()
+      case .failure(.noInternet), .failure(.serviceError), .failure(.noRecord):
+        self.presenter?.presentMobileDetailError()
       }
     }
   }
