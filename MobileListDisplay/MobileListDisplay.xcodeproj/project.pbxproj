@@ -43,11 +43,13 @@
 		FA382F90215FB3DB0019AEBC /* FavouriteListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382F8A215FB3DB0019AEBC /* FavouriteListViewController.swift */; };
 		FA382F91215FB3DB0019AEBC /* FavouriteListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382F8B215FB3DB0019AEBC /* FavouriteListInteractor.swift */; };
 		FA382F982160AE530019AEBC /* MobileListPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382F972160AE530019AEBC /* MobileListPresenterTest.swift */; };
-		FA382F9A2160AE6C0019AEBC /* MobileListWorkerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382F992160AE6C0019AEBC /* MobileListWorkerTest.swift */; };
 		FA382F9C2160AE890019AEBC /* MobileListViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382F9B2160AE890019AEBC /* MobileListViewControllerTest.swift */; };
 		FA382F9E2160AEA10019AEBC /* MobileListInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382F9D2160AEA10019AEBC /* MobileListInteractorTest.swift */; };
 		FA382FA02160C7430019AEBC /* MobileListDisplayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382F9F2160C7420019AEBC /* MobileListDisplayUITests.swift */; };
 		FA382FA22160C7570019AEBC /* MobileListDisplayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382FA12160C7570019AEBC /* MobileListDisplayTests.swift */; };
+		FA382FB62160FC640019AEBC /* MobileDetailViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382FB52160FC640019AEBC /* MobileDetailViewControllerTest.swift */; };
+		FA382FB82160FCDA0019AEBC /* MobileDetailsInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382FB72160FCDA0019AEBC /* MobileDetailsInteractorTest.swift */; };
+		FA382FBA21610B3C0019AEBC /* MobileDetailsPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382FB921610B3C0019AEBC /* MobileDetailsPresenterTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,11 +118,13 @@
 		FA382F8A215FB3DB0019AEBC /* FavouriteListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteListViewController.swift; sourceTree = "<group>"; };
 		FA382F8B215FB3DB0019AEBC /* FavouriteListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteListInteractor.swift; sourceTree = "<group>"; };
 		FA382F972160AE530019AEBC /* MobileListPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileListPresenterTest.swift; sourceTree = "<group>"; };
-		FA382F992160AE6C0019AEBC /* MobileListWorkerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileListWorkerTest.swift; sourceTree = "<group>"; };
 		FA382F9B2160AE890019AEBC /* MobileListViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileListViewControllerTest.swift; sourceTree = "<group>"; };
 		FA382F9D2160AEA10019AEBC /* MobileListInteractorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileListInteractorTest.swift; sourceTree = "<group>"; };
 		FA382F9F2160C7420019AEBC /* MobileListDisplayUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobileListDisplayUITests.swift; sourceTree = "<group>"; };
 		FA382FA12160C7570019AEBC /* MobileListDisplayTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobileListDisplayTests.swift; sourceTree = "<group>"; };
+		FA382FB52160FC640019AEBC /* MobileDetailViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDetailViewControllerTest.swift; sourceTree = "<group>"; };
+		FA382FB72160FCDA0019AEBC /* MobileDetailsInteractorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDetailsInteractorTest.swift; sourceTree = "<group>"; };
+		FA382FB921610B3C0019AEBC /* MobileDetailsPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDetailsPresenterTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +219,7 @@
 		FA382F33215F20D90019AEBC /* MobileListDisplayTests */ = {
 			isa = PBXGroup;
 			children = (
+				FA382FB42160FC1C0019AEBC /* MobileDetails */,
 				FA382FA12160C7570019AEBC /* MobileListDisplayTests.swift */,
 				FA382F962160ADF90019AEBC /* MobileListTest */,
 				FA382F36215F20D90019AEBC /* Info.plist */,
@@ -315,11 +320,20 @@
 			isa = PBXGroup;
 			children = (
 				FA382F972160AE530019AEBC /* MobileListPresenterTest.swift */,
-				FA382F992160AE6C0019AEBC /* MobileListWorkerTest.swift */,
 				FA382F9B2160AE890019AEBC /* MobileListViewControllerTest.swift */,
 				FA382F9D2160AEA10019AEBC /* MobileListInteractorTest.swift */,
 			);
 			path = MobileListTest;
+			sourceTree = "<group>";
+		};
+		FA382FB42160FC1C0019AEBC /* MobileDetails */ = {
+			isa = PBXGroup;
+			children = (
+				FA382FB52160FC640019AEBC /* MobileDetailViewControllerTest.swift */,
+				FA382FB72160FCDA0019AEBC /* MobileDetailsInteractorTest.swift */,
+				FA382FB921610B3C0019AEBC /* MobileDetailsPresenterTest.swift */,
+			);
+			path = MobileDetails;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -487,6 +501,11 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MobileListDisplayTests/Pods-MobileListDisplayTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/SWSegmentedControl/SWSegmentedControl.framework",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
@@ -495,6 +514,11 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SWSegmentedControl.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
@@ -630,10 +654,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA382FA22160C7570019AEBC /* MobileListDisplayTests.swift in Sources */,
+				FA382FB82160FCDA0019AEBC /* MobileDetailsInteractorTest.swift in Sources */,
 				FA382F9E2160AEA10019AEBC /* MobileListInteractorTest.swift in Sources */,
 				FA382F9C2160AE890019AEBC /* MobileListViewControllerTest.swift in Sources */,
+				FA382FBA21610B3C0019AEBC /* MobileDetailsPresenterTest.swift in Sources */,
 				FA382F982160AE530019AEBC /* MobileListPresenterTest.swift in Sources */,
-				FA382F9A2160AE6C0019AEBC /* MobileListWorkerTest.swift in Sources */,
+				FA382FB62160FC640019AEBC /* MobileDetailViewControllerTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

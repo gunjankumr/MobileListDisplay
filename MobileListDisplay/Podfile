@@ -1,20 +1,24 @@
 platform :ios, '9.0'
 
-target 'MobileListDisplay' do
-  use_frameworks!
+def sharePods
   pod 'Moya'
   pod 'SWSegmentedControl'
+  pod 'RealmSwift'
+end
+
+target 'MobileListDisplay' do
+  use_frameworks!
+  sharePods
   pod 'SVProgressHUD'
   pod 'SDWebImage'
   pod 'iCarousel'
-  pod 'RealmSwift'
 end
 
 target 'MobileListDisplayTests' do
   use_frameworks!
+  sharePods
   pod 'Quick'
   pod 'Nimble'
-  pod 'SWSegmentedControl'
 end
 
 target 'MobileListDisplayUITests' do
