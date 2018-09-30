@@ -1,0 +1,6 @@
+framework module Pods_MobileListDisplay {
+  umbrella header "Pods-MobileListDisplay-umbrella.h"
+
+  export *
+  module * { export * }
+}

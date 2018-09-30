@@ -1,0 +1,997 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A340D1F6CD20B01DA609DD13 /* Pods_MobileListDisplayUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CD5DCD25A58305DE59493CB /* Pods_MobileListDisplayUITests.framework */; };
+		E746B054A5AB4551DAC722C0 /* Pods_MobileListDisplayTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E137C313BDA976CB86FF1B94 /* Pods_MobileListDisplayTests.framework */; };
+		E7BBE753C33F6CBFC17E9836 /* Pods_MobileListDisplay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFCB47D0FA7BDCEA3D0A3581 /* Pods_MobileListDisplay.framework */; };
+		FA382F20215F20D70019AEBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382F1F215F20D70019AEBC /* AppDelegate.swift */; };
+		FA382F25215F20D70019AEBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA382F23215F20D70019AEBC /* Main.storyboard */; };
+		FA382F27215F20D90019AEBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA382F26215F20D90019AEBC /* Assets.xcassets */; };
+		FA382F2A215F20D90019AEBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA382F28215F20D90019AEBC /* LaunchScreen.storyboard */; };
+		FA382F55215F30920019AEBC /* MobileListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382F4F215F30920019AEBC /* MobileListPresenter.swift */; };
+		FA382F56215F30920019AEBC /* MobileListWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382F50215F30920019AEBC /* MobileListWorker.swift */; };
+		FA382F57215F30920019AEBC /* MobileListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382F51215F30920019AEBC /* MobileListRouter.swift */; };
+		FA382F58215F30920019AEBC /* MobileListModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382F52215F30920019AEBC /* MobileListModels.swift */; };
+		FA382F59215F30920019AEBC /* MobileListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382F53215F30920019AEBC /* MobileListViewController.swift */; };
+		FA382F5A215F30920019AEBC /* MobileListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382F54215F30920019AEBC /* MobileListInteractor.swift */; };
+		FA382F5C215F35790019AEBC /* MobileList+SWSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382F5B215F35790019AEBC /* MobileList+SWSegmentedControl.swift */; };
+		FA382F5E215F35B30019AEBC /* MobileList+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382F5D215F35B30019AEBC /* MobileList+TableView.swift */; };
+		FA382F61215F3E6C0019AEBC /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382F60215F3E6C0019AEBC /* Connectivity.swift */; };
+		FA382F63215F3EB90019AEBC /* ApiEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382F62215F3EB90019AEBC /* ApiEnvironment.swift */; };
+		FA382F65215F3F080019AEBC /* ApiServiceConfigurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382F64215F3F080019AEBC /* ApiServiceConfigurations.swift */; };
+		FA382F6E215F47EE0019AEBC /* PublicEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382F6D215F47EE0019AEBC /* PublicEnums.swift */; };
+		FA382F71215F49D20019AEBC /* Mobile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382F70215F49D20019AEBC /* Mobile.swift */; };
+		FA382F73215F635D0019AEBC /* MobileListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382F72215F635D0019AEBC /* MobileListTableViewCell.swift */; };
+		FA382F7B215F79070019AEBC /* MobileDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382F75215F79070019AEBC /* MobileDetailsPresenter.swift */; };
+		FA382F7C215F79070019AEBC /* MobileDetailsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382F76215F79070019AEBC /* MobileDetailsWorker.swift */; };
+		FA382F7D215F79080019AEBC /* MobileDetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382F77215F79070019AEBC /* MobileDetailsRouter.swift */; };
+		FA382F7E215F79080019AEBC /* MobileDetailsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382F78215F79070019AEBC /* MobileDetailsModels.swift */; };
+		FA382F7F215F79080019AEBC /* MobileDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382F79215F79070019AEBC /* MobileDetailsViewController.swift */; };
+		FA382F80215F79080019AEBC /* MobileDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382F7A215F79070019AEBC /* MobileDetailsInteractor.swift */; };
+		FA382F82215F79CB0019AEBC /* MobileDetailImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382F81215F79CB0019AEBC /* MobileDetailImages.swift */; };
+		FA382F84215F90E30019AEBC /* MobileDetail+ImageGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382F83215F90E30019AEBC /* MobileDetail+ImageGallery.swift */; };
+		FA382F8C215FB3DB0019AEBC /* FavouriteListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382F86215FB3DB0019AEBC /* FavouriteListPresenter.swift */; };
+		FA382F8D215FB3DB0019AEBC /* FavouriteListWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382F87215FB3DB0019AEBC /* FavouriteListWorker.swift */; };
+		FA382F8E215FB3DB0019AEBC /* FavouriteListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382F88215FB3DB0019AEBC /* FavouriteListRouter.swift */; };
+		FA382F8F215FB3DB0019AEBC /* FavouriteListModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382F89215FB3DB0019AEBC /* FavouriteListModels.swift */; };
+		FA382F90215FB3DB0019AEBC /* FavouriteListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382F8A215FB3DB0019AEBC /* FavouriteListViewController.swift */; };
+		FA382F91215FB3DB0019AEBC /* FavouriteListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382F8B215FB3DB0019AEBC /* FavouriteListInteractor.swift */; };
+		FA382F982160AE530019AEBC /* MobileListPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382F972160AE530019AEBC /* MobileListPresenterTest.swift */; };
+		FA382F9C2160AE890019AEBC /* MobileListViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382F9B2160AE890019AEBC /* MobileListViewControllerTest.swift */; };
+		FA382F9E2160AEA10019AEBC /* MobileListInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382F9D2160AEA10019AEBC /* MobileListInteractorTest.swift */; };
+		FA382FA02160C7430019AEBC /* MobileListDisplayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382F9F2160C7420019AEBC /* MobileListDisplayUITests.swift */; };
+		FA382FA22160C7570019AEBC /* MobileListDisplayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382FA12160C7570019AEBC /* MobileListDisplayTests.swift */; };
+		FA382FB62160FC640019AEBC /* MobileDetailViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382FB52160FC640019AEBC /* MobileDetailViewControllerTest.swift */; };
+		FA382FB82160FCDA0019AEBC /* MobileDetailsInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382FB72160FCDA0019AEBC /* MobileDetailsInteractorTest.swift */; };
+		FA382FBA21610B3C0019AEBC /* MobileDetailsPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382FB921610B3C0019AEBC /* MobileDetailsPresenterTest.swift */; };
+		FA382FBE21612A950019AEBC /* MobileListSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382FBB216125680019AEBC /* MobileListSpec.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA382F31215F20D90019AEBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA382F14215F20D70019AEBC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA382F1B215F20D70019AEBC;
+			remoteInfo = MobileListDisplay;
+		};
+		FA382F3C215F20D90019AEBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA382F14215F20D70019AEBC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA382F1B215F20D70019AEBC;
+			remoteInfo = MobileListDisplay;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0AC0CA8AB63D3B0D8701A808 /* Pods-MobileListDisplay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileListDisplay.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobileListDisplay/Pods-MobileListDisplay.release.xcconfig"; sourceTree = "<group>"; };
+		2F57E2FBD3D2B5191F08E93B /* Pods-MobileListDisplayTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileListDisplayTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobileListDisplayTests/Pods-MobileListDisplayTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3CD5DCD25A58305DE59493CB /* Pods_MobileListDisplayUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobileListDisplayUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		46C813F25EAC1F4452CC8737 /* Pods-MobileListDisplayUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileListDisplayUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobileListDisplayUITests/Pods-MobileListDisplayUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7E99DB7AF435B89824475DA4 /* Pods-MobileListDisplayTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileListDisplayTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobileListDisplayTests/Pods-MobileListDisplayTests.release.xcconfig"; sourceTree = "<group>"; };
+		B3D955663D629F7B6E1D99B9 /* Pods-MobileListDisplay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileListDisplay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobileListDisplay/Pods-MobileListDisplay.debug.xcconfig"; sourceTree = "<group>"; };
+		D6E2960435AC84D4B3CFFA1D /* Pods-MobileListDisplayUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileListDisplayUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobileListDisplayUITests/Pods-MobileListDisplayUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E137C313BDA976CB86FF1B94 /* Pods_MobileListDisplayTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobileListDisplayTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFCB47D0FA7BDCEA3D0A3581 /* Pods_MobileListDisplay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobileListDisplay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA382F1C215F20D70019AEBC /* MobileListDisplay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileListDisplay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA382F1F215F20D70019AEBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA382F24215F20D70019AEBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FA382F26215F20D90019AEBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA382F29215F20D90019AEBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FA382F2B215F20D90019AEBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA382F30215F20D90019AEBC /* MobileListDisplayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobileListDisplayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA382F36215F20D90019AEBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA382F3B215F20D90019AEBC /* MobileListDisplayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobileListDisplayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA382F41215F20D90019AEBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA382F4F215F30920019AEBC /* MobileListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileListPresenter.swift; sourceTree = "<group>"; };
+		FA382F50215F30920019AEBC /* MobileListWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileListWorker.swift; sourceTree = "<group>"; };
+		FA382F51215F30920019AEBC /* MobileListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileListRouter.swift; sourceTree = "<group>"; };
+		FA382F52215F30920019AEBC /* MobileListModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileListModels.swift; sourceTree = "<group>"; };
+		FA382F53215F30920019AEBC /* MobileListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileListViewController.swift; sourceTree = "<group>"; };
+		FA382F54215F30920019AEBC /* MobileListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileListInteractor.swift; sourceTree = "<group>"; };
+		FA382F5B215F35790019AEBC /* MobileList+SWSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MobileList+SWSegmentedControl.swift"; sourceTree = "<group>"; };
+		FA382F5D215F35B30019AEBC /* MobileList+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MobileList+TableView.swift"; sourceTree = "<group>"; };
+		FA382F60215F3E6C0019AEBC /* Connectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connectivity.swift; sourceTree = "<group>"; };
+		FA382F62215F3EB90019AEBC /* ApiEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiEnvironment.swift; sourceTree = "<group>"; };
+		FA382F64215F3F080019AEBC /* ApiServiceConfigurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiServiceConfigurations.swift; sourceTree = "<group>"; };
+		FA382F6D215F47EE0019AEBC /* PublicEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicEnums.swift; sourceTree = "<group>"; };
+		FA382F70215F49D20019AEBC /* Mobile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mobile.swift; sourceTree = "<group>"; };
+		FA382F72215F635D0019AEBC /* MobileListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileListTableViewCell.swift; sourceTree = "<group>"; };
+		FA382F75215F79070019AEBC /* MobileDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDetailsPresenter.swift; sourceTree = "<group>"; };
+		FA382F76215F79070019AEBC /* MobileDetailsWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDetailsWorker.swift; sourceTree = "<group>"; };
+		FA382F77215F79070019AEBC /* MobileDetailsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDetailsRouter.swift; sourceTree = "<group>"; };
+		FA382F78215F79070019AEBC /* MobileDetailsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDetailsModels.swift; sourceTree = "<group>"; };
+		FA382F79215F79070019AEBC /* MobileDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDetailsViewController.swift; sourceTree = "<group>"; };
+		FA382F7A215F79070019AEBC /* MobileDetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDetailsInteractor.swift; sourceTree = "<group>"; };
+		FA382F81215F79CB0019AEBC /* MobileDetailImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDetailImages.swift; sourceTree = "<group>"; };
+		FA382F83215F90E30019AEBC /* MobileDetail+ImageGallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MobileDetail+ImageGallery.swift"; sourceTree = "<group>"; };
+		FA382F86215FB3DB0019AEBC /* FavouriteListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteListPresenter.swift; sourceTree = "<group>"; };
+		FA382F87215FB3DB0019AEBC /* FavouriteListWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteListWorker.swift; sourceTree = "<group>"; };
+		FA382F88215FB3DB0019AEBC /* FavouriteListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteListRouter.swift; sourceTree = "<group>"; };
+		FA382F89215FB3DB0019AEBC /* FavouriteListModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteListModels.swift; sourceTree = "<group>"; };
+		FA382F8A215FB3DB0019AEBC /* FavouriteListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteListViewController.swift; sourceTree = "<group>"; };
+		FA382F8B215FB3DB0019AEBC /* FavouriteListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteListInteractor.swift; sourceTree = "<group>"; };
+		FA382F972160AE530019AEBC /* MobileListPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileListPresenterTest.swift; sourceTree = "<group>"; };
+		FA382F9B2160AE890019AEBC /* MobileListViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileListViewControllerTest.swift; sourceTree = "<group>"; };
+		FA382F9D2160AEA10019AEBC /* MobileListInteractorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileListInteractorTest.swift; sourceTree = "<group>"; };
+		FA382F9F2160C7420019AEBC /* MobileListDisplayUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobileListDisplayUITests.swift; sourceTree = "<group>"; };
+		FA382FA12160C7570019AEBC /* MobileListDisplayTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobileListDisplayTests.swift; sourceTree = "<group>"; };
+		FA382FB52160FC640019AEBC /* MobileDetailViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDetailViewControllerTest.swift; sourceTree = "<group>"; };
+		FA382FB72160FCDA0019AEBC /* MobileDetailsInteractorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDetailsInteractorTest.swift; sourceTree = "<group>"; };
+		FA382FB921610B3C0019AEBC /* MobileDetailsPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDetailsPresenterTest.swift; sourceTree = "<group>"; };
+		FA382FBB216125680019AEBC /* MobileListSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileListSpec.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA382F19215F20D70019AEBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7BBE753C33F6CBFC17E9836 /* Pods_MobileListDisplay.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA382F2D215F20D90019AEBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E746B054A5AB4551DAC722C0 /* Pods_MobileListDisplayTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA382F38215F20D90019AEBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A340D1F6CD20B01DA609DD13 /* Pods_MobileListDisplayUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8619AC4952984CC51C28F25D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B3D955663D629F7B6E1D99B9 /* Pods-MobileListDisplay.debug.xcconfig */,
+				0AC0CA8AB63D3B0D8701A808 /* Pods-MobileListDisplay.release.xcconfig */,
+				2F57E2FBD3D2B5191F08E93B /* Pods-MobileListDisplayTests.debug.xcconfig */,
+				7E99DB7AF435B89824475DA4 /* Pods-MobileListDisplayTests.release.xcconfig */,
+				46C813F25EAC1F4452CC8737 /* Pods-MobileListDisplayUITests.debug.xcconfig */,
+				D6E2960435AC84D4B3CFFA1D /* Pods-MobileListDisplayUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8F6594ADA348A2BDFBB8E4A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EFCB47D0FA7BDCEA3D0A3581 /* Pods_MobileListDisplay.framework */,
+				E137C313BDA976CB86FF1B94 /* Pods_MobileListDisplayTests.framework */,
+				3CD5DCD25A58305DE59493CB /* Pods_MobileListDisplayUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA382F13215F20D70019AEBC = {
+			isa = PBXGroup;
+			children = (
+				FA382F1E215F20D70019AEBC /* MobileListDisplay */,
+				FA382F33215F20D90019AEBC /* MobileListDisplayTests */,
+				FA382F3E215F20D90019AEBC /* MobileListDisplayUITests */,
+				FA382F1D215F20D70019AEBC /* Products */,
+				8619AC4952984CC51C28F25D /* Pods */,
+				8F6594ADA348A2BDFBB8E4A6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FA382F1D215F20D70019AEBC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA382F1C215F20D70019AEBC /* MobileListDisplay.app */,
+				FA382F30215F20D90019AEBC /* MobileListDisplayTests.xctest */,
+				FA382F3B215F20D90019AEBC /* MobileListDisplayUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA382F1E215F20D70019AEBC /* MobileListDisplay */ = {
+			isa = PBXGroup;
+			children = (
+				FA382F6F215F49BA0019AEBC /* Models */,
+				FA382F6A215F448B0019AEBC /* Common */,
+				FA382F5F215F3DE50019AEBC /* API */,
+				FA382F4D215F30680019AEBC /* Scenes */,
+				FA382F1F215F20D70019AEBC /* AppDelegate.swift */,
+				FA382F23215F20D70019AEBC /* Main.storyboard */,
+				FA382F26215F20D90019AEBC /* Assets.xcassets */,
+				FA382F28215F20D90019AEBC /* LaunchScreen.storyboard */,
+				FA382F2B215F20D90019AEBC /* Info.plist */,
+			);
+			path = MobileListDisplay;
+			sourceTree = "<group>";
+		};
+		FA382F33215F20D90019AEBC /* MobileListDisplayTests */ = {
+			isa = PBXGroup;
+			children = (
+				FA382FB42160FC1C0019AEBC /* MobileDetails */,
+				FA382FA12160C7570019AEBC /* MobileListDisplayTests.swift */,
+				FA382F962160ADF90019AEBC /* MobileListTest */,
+				FA382F36215F20D90019AEBC /* Info.plist */,
+			);
+			path = MobileListDisplayTests;
+			sourceTree = "<group>";
+		};
+		FA382F3E215F20D90019AEBC /* MobileListDisplayUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FA382FBB216125680019AEBC /* MobileListSpec.swift */,
+				FA382F9F2160C7420019AEBC /* MobileListDisplayUITests.swift */,
+				FA382F41215F20D90019AEBC /* Info.plist */,
+			);
+			path = MobileListDisplayUITests;
+			sourceTree = "<group>";
+		};
+		FA382F4D215F30680019AEBC /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				FA382F85215FB3B90019AEBC /* FavouriteList */,
+				FA382F74215F78D60019AEBC /* MobileDetails */,
+				FA382F4E215F30710019AEBC /* MobileList */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		FA382F4E215F30710019AEBC /* MobileList */ = {
+			isa = PBXGroup;
+			children = (
+				FA382F4F215F30920019AEBC /* MobileListPresenter.swift */,
+				FA382F50215F30920019AEBC /* MobileListWorker.swift */,
+				FA382F51215F30920019AEBC /* MobileListRouter.swift */,
+				FA382F52215F30920019AEBC /* MobileListModels.swift */,
+				FA382F53215F30920019AEBC /* MobileListViewController.swift */,
+				FA382F5B215F35790019AEBC /* MobileList+SWSegmentedControl.swift */,
+				FA382F5D215F35B30019AEBC /* MobileList+TableView.swift */,
+				FA382F54215F30920019AEBC /* MobileListInteractor.swift */,
+				FA382F72215F635D0019AEBC /* MobileListTableViewCell.swift */,
+			);
+			path = MobileList;
+			sourceTree = "<group>";
+		};
+		FA382F5F215F3DE50019AEBC /* API */ = {
+			isa = PBXGroup;
+			children = (
+				FA382F60215F3E6C0019AEBC /* Connectivity.swift */,
+				FA382F62215F3EB90019AEBC /* ApiEnvironment.swift */,
+				FA382F64215F3F080019AEBC /* ApiServiceConfigurations.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		FA382F6A215F448B0019AEBC /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				FA382F6D215F47EE0019AEBC /* PublicEnums.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		FA382F6F215F49BA0019AEBC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FA382F70215F49D20019AEBC /* Mobile.swift */,
+				FA382F81215F79CB0019AEBC /* MobileDetailImages.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FA382F74215F78D60019AEBC /* MobileDetails */ = {
+			isa = PBXGroup;
+			children = (
+				FA382F75215F79070019AEBC /* MobileDetailsPresenter.swift */,
+				FA382F76215F79070019AEBC /* MobileDetailsWorker.swift */,
+				FA382F77215F79070019AEBC /* MobileDetailsRouter.swift */,
+				FA382F78215F79070019AEBC /* MobileDetailsModels.swift */,
+				FA382F79215F79070019AEBC /* MobileDetailsViewController.swift */,
+				FA382F7A215F79070019AEBC /* MobileDetailsInteractor.swift */,
+				FA382F83215F90E30019AEBC /* MobileDetail+ImageGallery.swift */,
+			);
+			path = MobileDetails;
+			sourceTree = "<group>";
+		};
+		FA382F85215FB3B90019AEBC /* FavouriteList */ = {
+			isa = PBXGroup;
+			children = (
+				FA382F86215FB3DB0019AEBC /* FavouriteListPresenter.swift */,
+				FA382F87215FB3DB0019AEBC /* FavouriteListWorker.swift */,
+				FA382F88215FB3DB0019AEBC /* FavouriteListRouter.swift */,
+				FA382F89215FB3DB0019AEBC /* FavouriteListModels.swift */,
+				FA382F8A215FB3DB0019AEBC /* FavouriteListViewController.swift */,
+				FA382F8B215FB3DB0019AEBC /* FavouriteListInteractor.swift */,
+			);
+			path = FavouriteList;
+			sourceTree = "<group>";
+		};
+		FA382F962160ADF90019AEBC /* MobileListTest */ = {
+			isa = PBXGroup;
+			children = (
+				FA382F972160AE530019AEBC /* MobileListPresenterTest.swift */,
+				FA382F9B2160AE890019AEBC /* MobileListViewControllerTest.swift */,
+				FA382F9D2160AEA10019AEBC /* MobileListInteractorTest.swift */,
+			);
+			path = MobileListTest;
+			sourceTree = "<group>";
+		};
+		FA382FB42160FC1C0019AEBC /* MobileDetails */ = {
+			isa = PBXGroup;
+			children = (
+				FA382FB52160FC640019AEBC /* MobileDetailViewControllerTest.swift */,
+				FA382FB72160FCDA0019AEBC /* MobileDetailsInteractorTest.swift */,
+				FA382FB921610B3C0019AEBC /* MobileDetailsPresenterTest.swift */,
+			);
+			path = MobileDetails;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA382F1B215F20D70019AEBC /* MobileListDisplay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA382F44215F20D90019AEBC /* Build configuration list for PBXNativeTarget "MobileListDisplay" */;
+			buildPhases = (
+				05E85D901DE2BFAFB9F42144 /* [CP] Check Pods Manifest.lock */,
+				FA382F18215F20D70019AEBC /* Sources */,
+				FA382F19215F20D70019AEBC /* Frameworks */,
+				FA382F1A215F20D70019AEBC /* Resources */,
+				F2F8B6D5A53915ED34FF93FF /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MobileListDisplay;
+			productName = MobileListDisplay;
+			productReference = FA382F1C215F20D70019AEBC /* MobileListDisplay.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FA382F2F215F20D90019AEBC /* MobileListDisplayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA382F47215F20D90019AEBC /* Build configuration list for PBXNativeTarget "MobileListDisplayTests" */;
+			buildPhases = (
+				C3831CF9DC5F01E5CEA0FFEA /* [CP] Check Pods Manifest.lock */,
+				FA382F2C215F20D90019AEBC /* Sources */,
+				FA382F2D215F20D90019AEBC /* Frameworks */,
+				FA382F2E215F20D90019AEBC /* Resources */,
+				0D1BB12D2F58A10137D7A0B9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA382F32215F20D90019AEBC /* PBXTargetDependency */,
+			);
+			name = MobileListDisplayTests;
+			productName = MobileListDisplayTests;
+			productReference = FA382F30215F20D90019AEBC /* MobileListDisplayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FA382F3A215F20D90019AEBC /* MobileListDisplayUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA382F4A215F20D90019AEBC /* Build configuration list for PBXNativeTarget "MobileListDisplayUITests" */;
+			buildPhases = (
+				F81D23646B5314BAB2B2EA98 /* [CP] Check Pods Manifest.lock */,
+				FA382F37215F20D90019AEBC /* Sources */,
+				FA382F38215F20D90019AEBC /* Frameworks */,
+				FA382F39215F20D90019AEBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA382F3D215F20D90019AEBC /* PBXTargetDependency */,
+			);
+			name = MobileListDisplayUITests;
+			productName = MobileListDisplayUITests;
+			productReference = FA382F3B215F20D90019AEBC /* MobileListDisplayUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA382F14215F20D70019AEBC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Sujeet Sinha";
+				TargetAttributes = {
+					FA382F1B215F20D70019AEBC = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					FA382F2F215F20D90019AEBC = {
+						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
+						TestTargetID = FA382F1B215F20D70019AEBC;
+					};
+					FA382F3A215F20D90019AEBC = {
+						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
+						TestTargetID = FA382F1B215F20D70019AEBC;
+					};
+				};
+			};
+			buildConfigurationList = FA382F17215F20D70019AEBC /* Build configuration list for PBXProject "MobileListDisplay" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA382F13215F20D70019AEBC;
+			productRefGroup = FA382F1D215F20D70019AEBC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA382F1B215F20D70019AEBC /* MobileListDisplay */,
+				FA382F2F215F20D90019AEBC /* MobileListDisplayTests */,
+				FA382F3A215F20D90019AEBC /* MobileListDisplayUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA382F1A215F20D70019AEBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA382F2A215F20D90019AEBC /* LaunchScreen.storyboard in Resources */,
+				FA382F27215F20D90019AEBC /* Assets.xcassets in Resources */,
+				FA382F25215F20D70019AEBC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA382F2E215F20D90019AEBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA382F39215F20D90019AEBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05E85D901DE2BFAFB9F42144 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MobileListDisplay-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0D1BB12D2F58A10137D7A0B9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MobileListDisplayTests/Pods-MobileListDisplayTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/SWSegmentedControl/SWSegmentedControl.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSnapshotTestCase/FBSnapshotTestCase.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SWSegmentedControl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MobileListDisplayTests/Pods-MobileListDisplayTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3831CF9DC5F01E5CEA0FFEA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MobileListDisplayTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2F8B6D5A53915ED34FF93FF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MobileListDisplay/Pods-MobileListDisplay-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SWSegmentedControl/SWSegmentedControl.framework",
+				"${BUILT_PRODUCTS_DIR}/iCarousel/iCarousel.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SWSegmentedControl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/iCarousel.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MobileListDisplay/Pods-MobileListDisplay-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F81D23646B5314BAB2B2EA98 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MobileListDisplayUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA382F18215F20D70019AEBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA382F71215F49D20019AEBC /* Mobile.swift in Sources */,
+				FA382F5A215F30920019AEBC /* MobileListInteractor.swift in Sources */,
+				FA382F82215F79CB0019AEBC /* MobileDetailImages.swift in Sources */,
+				FA382F7E215F79080019AEBC /* MobileDetailsModels.swift in Sources */,
+				FA382F90215FB3DB0019AEBC /* FavouriteListViewController.swift in Sources */,
+				FA382F6E215F47EE0019AEBC /* PublicEnums.swift in Sources */,
+				FA382F8E215FB3DB0019AEBC /* FavouriteListRouter.swift in Sources */,
+				FA382F55215F30920019AEBC /* MobileListPresenter.swift in Sources */,
+				FA382F61215F3E6C0019AEBC /* Connectivity.swift in Sources */,
+				FA382F5E215F35B30019AEBC /* MobileList+TableView.swift in Sources */,
+				FA382F8F215FB3DB0019AEBC /* FavouriteListModels.swift in Sources */,
+				FA382F20215F20D70019AEBC /* AppDelegate.swift in Sources */,
+				FA382F91215FB3DB0019AEBC /* FavouriteListInteractor.swift in Sources */,
+				FA382F59215F30920019AEBC /* MobileListViewController.swift in Sources */,
+				FA382F5C215F35790019AEBC /* MobileList+SWSegmentedControl.swift in Sources */,
+				FA382F84215F90E30019AEBC /* MobileDetail+ImageGallery.swift in Sources */,
+				FA382F57215F30920019AEBC /* MobileListRouter.swift in Sources */,
+				FA382F7C215F79070019AEBC /* MobileDetailsWorker.swift in Sources */,
+				FA382F58215F30920019AEBC /* MobileListModels.swift in Sources */,
+				FA382F80215F79080019AEBC /* MobileDetailsInteractor.swift in Sources */,
+				FA382F56215F30920019AEBC /* MobileListWorker.swift in Sources */,
+				FA382F8C215FB3DB0019AEBC /* FavouriteListPresenter.swift in Sources */,
+				FA382F63215F3EB90019AEBC /* ApiEnvironment.swift in Sources */,
+				FA382F8D215FB3DB0019AEBC /* FavouriteListWorker.swift in Sources */,
+				FA382F65215F3F080019AEBC /* ApiServiceConfigurations.swift in Sources */,
+				FA382F7D215F79080019AEBC /* MobileDetailsRouter.swift in Sources */,
+				FA382F7B215F79070019AEBC /* MobileDetailsPresenter.swift in Sources */,
+				FA382F73215F635D0019AEBC /* MobileListTableViewCell.swift in Sources */,
+				FA382F7F215F79080019AEBC /* MobileDetailsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA382F2C215F20D90019AEBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA382FA22160C7570019AEBC /* MobileListDisplayTests.swift in Sources */,
+				FA382FB82160FCDA0019AEBC /* MobileDetailsInteractorTest.swift in Sources */,
+				FA382F9E2160AEA10019AEBC /* MobileListInteractorTest.swift in Sources */,
+				FA382F9C2160AE890019AEBC /* MobileListViewControllerTest.swift in Sources */,
+				FA382FBA21610B3C0019AEBC /* MobileDetailsPresenterTest.swift in Sources */,
+				FA382F982160AE530019AEBC /* MobileListPresenterTest.swift in Sources */,
+				FA382FBE21612A950019AEBC /* MobileListSpec.swift in Sources */,
+				FA382FB62160FC640019AEBC /* MobileDetailViewControllerTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA382F37215F20D90019AEBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA382FA02160C7430019AEBC /* MobileListDisplayUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA382F32215F20D90019AEBC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA382F1B215F20D70019AEBC /* MobileListDisplay */;
+			targetProxy = FA382F31215F20D90019AEBC /* PBXContainerItemProxy */;
+		};
+		FA382F3D215F20D90019AEBC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA382F1B215F20D70019AEBC /* MobileListDisplay */;
+			targetProxy = FA382F3C215F20D90019AEBC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FA382F23215F20D70019AEBC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA382F24215F20D70019AEBC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FA382F28215F20D90019AEBC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA382F29215F20D90019AEBC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA382F42215F20D90019AEBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FA382F43215F20D90019AEBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA382F45215F20D90019AEBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3D955663D629F7B6E1D99B9 /* Pods-MobileListDisplay.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MobileListDisplay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.MobileListDisplay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA382F46215F20D90019AEBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AC0CA8AB63D3B0D8701A808 /* Pods-MobileListDisplay.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MobileListDisplay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.MobileListDisplay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FA382F48215F20D90019AEBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F57E2FBD3D2B5191F08E93B /* Pods-MobileListDisplayTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MobileListDisplayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.MobileListDisplayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MobileListDisplay.app/MobileListDisplay";
+			};
+			name = Debug;
+		};
+		FA382F49215F20D90019AEBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E99DB7AF435B89824475DA4 /* Pods-MobileListDisplayTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MobileListDisplayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.MobileListDisplayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MobileListDisplay.app/MobileListDisplay";
+			};
+			name = Release;
+		};
+		FA382F4B215F20D90019AEBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46C813F25EAC1F4452CC8737 /* Pods-MobileListDisplayUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MobileListDisplayUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.MobileListDisplayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MobileListDisplay;
+			};
+			name = Debug;
+		};
+		FA382F4C215F20D90019AEBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6E2960435AC84D4B3CFFA1D /* Pods-MobileListDisplayUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MobileListDisplayUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.MobileListDisplayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MobileListDisplay;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA382F17215F20D70019AEBC /* Build configuration list for PBXProject "MobileListDisplay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA382F42215F20D90019AEBC /* Debug */,
+				FA382F43215F20D90019AEBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA382F44215F20D90019AEBC /* Build configuration list for PBXNativeTarget "MobileListDisplay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA382F45215F20D90019AEBC /* Debug */,
+				FA382F46215F20D90019AEBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA382F47215F20D90019AEBC /* Build configuration list for PBXNativeTarget "MobileListDisplayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA382F48215F20D90019AEBC /* Debug */,
+				FA382F49215F20D90019AEBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA382F4A215F20D90019AEBC /* Build configuration list for PBXNativeTarget "MobileListDisplayUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA382F4B215F20D90019AEBC /* Debug */,
+				FA382F4C215F20D90019AEBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA382F14215F20D70019AEBC /* Project object */;
+}
