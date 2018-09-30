@@ -35,12 +35,6 @@ extension ApiServiceConfigurations: TargetType {
   }
   
   public var sampleData: Data {
-//    switch self {
-//    case .getMobileList:
-//      return .utf8Encoded
-//    case .getMobileDetailImages:
-//      return .utf8Encoded
-//    }
     return Data()
   }
   
