@@ -29,7 +29,8 @@ class MobileListViewController: UIViewController, MobileListDisplayLogic {
 
   @IBOutlet weak var segmentedControl: SWSegmentedControl!
   @IBOutlet var tableView: UITableView!
-  
+  @IBOutlet var btnSort: UIBarButtonItem!
+
   var sorting: Sorting = .low
   var selectedTab: TapOptions = .all
   
@@ -49,7 +50,6 @@ class MobileListViewController: UIViewController, MobileListDisplayLogic {
     super.viewDidLoad()
     getMobileDataFromService()
   }
-
   
     // MARK: - Display Functions
   func displayMobileList(viewModel: MobileList.GetMobileList.ViewModel) {

@@ -50,6 +50,7 @@
 		FA382FB62160FC640019AEBC /* MobileDetailViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382FB52160FC640019AEBC /* MobileDetailViewControllerTest.swift */; };
 		FA382FB82160FCDA0019AEBC /* MobileDetailsInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382FB72160FCDA0019AEBC /* MobileDetailsInteractorTest.swift */; };
 		FA382FBA21610B3C0019AEBC /* MobileDetailsPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382FB921610B3C0019AEBC /* MobileDetailsPresenterTest.swift */; };
+		FA382FBE21612A950019AEBC /* MobileListSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA382FBB216125680019AEBC /* MobileListSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,6 +126,7 @@
 		FA382FB52160FC640019AEBC /* MobileDetailViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDetailViewControllerTest.swift; sourceTree = "<group>"; };
 		FA382FB72160FCDA0019AEBC /* MobileDetailsInteractorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDetailsInteractorTest.swift; sourceTree = "<group>"; };
 		FA382FB921610B3C0019AEBC /* MobileDetailsPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileDetailsPresenterTest.swift; sourceTree = "<group>"; };
+		FA382FBB216125680019AEBC /* MobileListSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileListSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,6 +232,7 @@
 		FA382F3E215F20D90019AEBC /* MobileListDisplayUITests */ = {
 			isa = PBXGroup;
 			children = (
+				FA382FBB216125680019AEBC /* MobileListSpec.swift */,
 				FA382F9F2160C7420019AEBC /* MobileListDisplayUITests.swift */,
 				FA382F41215F20D90019AEBC /* Info.plist */,
 			);
@@ -507,6 +510,7 @@
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/SWSegmentedControl/SWSegmentedControl.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSnapshotTestCase/FBSnapshotTestCase.framework",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 			);
@@ -520,6 +524,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SWSegmentedControl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
 			);
@@ -659,6 +664,7 @@
 				FA382F9C2160AE890019AEBC /* MobileListViewControllerTest.swift in Sources */,
 				FA382FBA21610B3C0019AEBC /* MobileDetailsPresenterTest.swift in Sources */,
 				FA382F982160AE530019AEBC /* MobileListPresenterTest.swift in Sources */,
+				FA382FBE21612A950019AEBC /* MobileListSpec.swift in Sources */,
 				FA382FB62160FC640019AEBC /* MobileDetailViewControllerTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

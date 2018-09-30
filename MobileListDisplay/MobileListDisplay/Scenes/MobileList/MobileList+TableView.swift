@@ -26,10 +26,13 @@ extension MobileListViewController: UITableViewDataSource {
     guard let cell = tableView.dequeueReusableCell(withIdentifier: "MobileListTableViewCell", for: indexPath) as? MobileListTableViewCell else {
         return UITableViewCell()
     }
+    
     let mobileInfo: MobileList.MobileInfo?  = self.mobiles[indexPath.row]
     
     guard let mobile = mobileInfo else { return cell }
     cell.favButton.tag = mobileInfo?.id ?? 0
+    cell.isAccessibilityElement = true
+    cell.accessibilityLabel = "\(String(describing: mobileInfo?.id))"
     cell.favButton.addTarget(self, action: #selector(favButtonClicked), for: .touchUpInside)
     cell.setMobile(mobile: mobile, selectedTab: selectedTab)
 
