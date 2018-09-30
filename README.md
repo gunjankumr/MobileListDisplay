@@ -7,12 +7,12 @@
               c) No internet connection
 3) Unit Test - Covered more than 55% which includes Controllers, Presenters, Interactors and Workers.
 
-![ScreenShot](https://github.com/gunjankumr/MobileListDisplay/Screenshots/unit-test.png?raw=true "Unit-Test")
+![ScreenShot](https://github.com/gunjankumr/MobileListDisplay/MobileListDisplay/Screenshots/unit-test.png?raw=true "Unit-Test")
 
 In Progress - FBSnapshotTestCase - Adding UI Testing
 
 4) Application UI -  
-![ScreenShot](https://github.com/gunjankumr/MobileListDisplay/Screenshots/mobileList.png?raw=true "Mobile List")
-![ScreenShot](https://github.com/gunjankumr/MobileListDisplay/Screenshots/sortOptions.png?raw=true "Sort Options")
-![ScreenShot](https://github.com/gunjankumr/MobileListDisplay/Screenshots/favList.png?raw=true "Favourite List")
-![ScreenShot](https://github.com/gunjankumr/MobileListDisplay/Screenshots/detailInfo.png?raw=true "Detail Info")
+![ScreenShot](https://github.com/gunjankumr/MobileListDisplay/MobileListDisplay/Screenshots/mobileList.png?raw=true "Mobile List")
+![ScreenShot](https://github.com/gunjankumr/MobileListDisplay/MobileListDisplay/Screenshots/sortOptions.png?raw=true "Sort Options")
+![ScreenShot](https://github.com/gunjankumr/MobileListDisplay/MobileListDisplay/Screenshots/favList.png?raw=true "Favourite List")
+![ScreenShot](https://github.com/gunjankumr/MobileListDisplay/MobileListDisplay/Screenshots/detailInfo.png?raw=true "Detail Info")
