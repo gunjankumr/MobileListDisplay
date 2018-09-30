@@ -29,7 +29,8 @@ class MobileListViewController: UIViewController, MobileListDisplayLogic {
 
   @IBOutlet weak var segmentedControl: SWSegmentedControl!
   @IBOutlet var tableView: UITableView!
-  
+  @IBOutlet var btnSort: UIBarButtonItem!
+
   var sorting: Sorting = .low
   var selectedTab: TapOptions = .all
   
@@ -47,9 +48,17 @@ class MobileListViewController: UIViewController, MobileListDisplayLogic {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    setAccessibilityForUITesting()
     getMobileDataFromService()
   }
 
+  func setAccessibilityForUITesting() {
+    btnSort.isAccessibilityElement = true
+    btnSort.accessibilityLabel = "btnSort"
+    segmentedControl.isAccessibilityElement = true
+    segmentedControl.subviews[0].accessibilityLabel = "all"
+    segmentedControl.subviews[1].accessibilityLabel = "fav"    
+  }
   
     // MARK: - Display Functions
   func displayMobileList(viewModel: MobileList.GetMobileList.ViewModel) {
