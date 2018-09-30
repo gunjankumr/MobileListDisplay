@@ -182,6 +182,10 @@
                     <navigationItem key="navigationItem" title="Mobile List" id="G0A-rk-ssI">
                         <barButtonItem key="backBarButtonItem" title=" " id="HhT-w3-uYk"/>
                         <barButtonItem key="rightBarButtonItem" title="Sort" id="e93-Xo-X4K">
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isAccessibilityElement" value="YES"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="accessibilityLabel" value="btnSort"/>
+                            </userDefinedRuntimeAttributes>
                             <connections>
                                 <action selector="buttonSortClick" destination="BYZ-38-t0r" id="4z0-IC-MAn"/>
                             </connections>

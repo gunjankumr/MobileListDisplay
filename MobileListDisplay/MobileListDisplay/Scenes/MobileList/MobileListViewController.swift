@@ -48,16 +48,7 @@ class MobileListViewController: UIViewController, MobileListDisplayLogic {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    setAccessibilityForUITesting()
     getMobileDataFromService()
-  }
-
-  func setAccessibilityForUITesting() {
-    btnSort.isAccessibilityElement = true
-    btnSort.accessibilityLabel = "btnSort"
-    segmentedControl.isAccessibilityElement = true
-    segmentedControl.subviews[0].accessibilityLabel = "all"
-    segmentedControl.subviews[1].accessibilityLabel = "fav"    
   }
   
     // MARK: - Display Functions
